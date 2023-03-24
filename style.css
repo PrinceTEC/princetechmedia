@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding:0;
+}
+#nav
+{
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+.navbar-brand
+{
+    height: 30px;
+    color: coral;
+    font-weight: bold;
+    font-size: 30px;
+}
+.navbar-nav li
+{
+    padding: 0 20px;
+}
+.navbar-nav li a{
+    float: right;
+    text-align: left;
+}
+#nav ul li a:hover{
+    color: coral !important;
+}
+.navbar
+{
+    background: dodgerblue;
+}
+.navbar-toggler{
+border: none!important;
+}
+.nav-item{
+    font-size: 18px;
+    font-weight: 700;
+}
+/*slider prop*/
+#slider{
+width: 100%;
+}
+.carousel-caption{
+    top:50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+.carousel-caption h3{
+    color: red;
+    font-size: 50px;
+
+}
+/*---About section---*/
+#about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+#about .btn{
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+.about-content{
+    padding-top: 20px;
+
+}
+
+.skills-bar p{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.progress{
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.progress-bar{
+    border-radius: 20px;
+}
+#Services{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(code\ \(4\).jfif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color:#efefef;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#Services h2{
+text-align: center;
+color: #efefef;
+padding-bottom: 10px;
+
+}
+
+#Services h2::after{
+    background: #efefef;
+    padding-bottom: 5px;
+    display: block;
+    height: 2px;
+    width:160px;
+    margin: 20px auto 5px;
+    content:'';
+        }
+ #Services p{
+        font-size: 16px;
+        color: salmon ;
+        margin-top: 20px;
+        }
+.services{
+    margin-top: 60px;
+}
+.icon{
+font-size: 40px;
+margin: 20px auto;
+padding: 20px;
+height: 80px;
+width: 80px;
+border-radius: 50%;
+border: 1px solid white;
+
+}
+
+.services .col-md-4:hover{
+    background: #007bff;
+    cursor: pointer;
+    transition: 0.6s;
+    color: white;
+}
+
+#Testimonials{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+
+}
+h1{
+    text-align: center;
+    padding-bottom: 10px;
+    color: #555;
+
+}
+h1::after{
+    content: '';
+    background: #007bff;
+    display: block;
+    margin:20px auto 5px;
+    width: 170px;
+    height: 3px;
+}
+#Testimonials .row{
+margin-top: 30px;
+}
+.col-md-5{
+    margin: 40px auto;
+
+}
+.profile{
+    padding: 50px 10px 10px;
+
+}
+
+.user{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.profile img{
+    top: -60px;
+    left: calc(50% - 60px);
+    border: 10px solid tan;
+    }
