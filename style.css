@@ -2,18 +2,19 @@
     margin: 0;
     padding:0;
 }
-#nav
-{
+html{
+    scroll-behavior: smooth;
+}
+#nav{
     position: sticky;
     top:0;
     z-index: 10;
 }
-.navbar-brand
-{
+.navbar-brand{
     height: 30px;
     color: coral;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
 }
 .navbar-nav li
 {
@@ -28,17 +29,24 @@
 }
 .navbar
 {
-    background: dodgerblue;
+    background: rgb(18, 224, 173);
 }
 .navbar-toggler{
 border: none!important;
+}
+.navbar-toggler:hover{
+color:coral;
+}
+span .navbar-toggler-icon:hover{
+color:coral;
+
 }
 .nav-item{
     font-size: 18px;
     font-weight: 700;
 }
 /*slider prop*/
-#slider{
+.slider{
 width: 100%;
 }
 .carousel-caption{
@@ -52,7 +60,7 @@ width: 100%;
 
 }
 /*---About section---*/
-#about{
+.about{
     padding-top: 50px;
     padding-bottom: 50px;
     color: #555;
@@ -61,6 +69,12 @@ width: 100%;
     margin-top: 20px;
     margin-bottom: 30px;
 
+}
+#fullwdt{
+    width: 100%;
+    height: 450px;
+    background-color: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    opacity: 0.5;
 }
 .about-content{
     padding-top: 20px;
@@ -78,7 +92,7 @@ width: 100%;
 .progress-bar{
     border-radius: 20px;
 }
-#Services{
+.services{
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(code\ \(4\).jfif);
     background-size: cover;
     background-position: center;
@@ -87,14 +101,14 @@ width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-#Services h2{
+#Services h3{
 text-align: center;
 color: #efefef;
 padding-bottom: 10px;
 
 }
 
-#Services h2::after{
+#Services h3::after{
     background: #efefef;
     padding-bottom: 5px;
     display: block;
@@ -105,11 +119,18 @@ padding-bottom: 10px;
         }
  #Services p{
         font-size: 16px;
-        color: salmon ;
+        color: rgb(5, 179, 97) ;
         margin-top: 20px;
+        font-weight: 600;
+        }
+        #Services p:hover{
+            color: white;
         }
 .services{
     margin-top: 60px;
+}
+section #Testimonials, #About, #Services{
+    min-height: 100vh;
 }
 .icon{
 font-size: 40px;
@@ -123,21 +144,22 @@ border: 1px solid white;
 }
 
 .services .col-md-4:hover{
-    background: #007bff;
+    background: #d82c51;
     cursor: pointer;
     transition: 0.6s;
     color: white;
+    border-radius: 20px;
 }
 
 #Testimonials{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: #555;
 
 }
 h1{
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     color: #555;
 
 }
@@ -150,14 +172,14 @@ h1::after{
     height: 3px;
 }
 #Testimonials .row{
-margin-top: 30px;
+margin-top: 20px; 
 }
 .col-md-5{
-    margin: 40px auto;
+    margin: 20px;
 
 }
 .profile{
-    padding: 50px 10px 10px;
+    padding: 10px 10px 10px;
 
 }
 
@@ -169,5 +191,226 @@ margin-top: 30px;
 .profile img{
     top: -60px;
     left: calc(50% - 60px);
-    border: 10px solid tan;
+    border: 5px solid tan;
+    }
+    #change{
+        padding: 5px 0;
+        background-color: rgba(8, 1, 8, 0.863);
+        height: 80px;
+        position: sticky;
+        bottom: 0;
+        z-index: 10;
+
+    }
+    .footer .social{
+        text-align: center;
+    }
+
+    .footer .social a{
+        font-size: 20px;
+        /*border: 1px solid rgb(220, 236, 238);*/
+        border-radius: 50%;
+        line-height: 40px;
+        Display: inline block;
+        margin: 0 30px;
+        padding: 1px;
+    }
+    #pos{
+        text-align: center;
+        padding-top: 3px; 
+        color:rgb(18, 224, 173);
+        font-weight: 700;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .footer #cola a{
+        color: blanchedalmond;
+    }
+    .footer #cola a:hover{
+        color: blue;
+    }
+    #progress{
+        position: fixed;
+        bottom: 72px;
+        right: 10px;
+        height: 70px;
+        width: 70px;
+        display: none;
+        place-items: center;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgb(18, 224, 173, 0.2);
+        cursor: pointer;
+
+    }
+    #progress-value{
+        display: block;
+        height: calc(100% - 15px);
+        width: calc(100% - 15px);
+        background-color: royalblue;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 35px;
+        color: black;
+        
+    }
+
+/*----------form---------*/
+   .contact{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(cont.jfif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: dodgerblue;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    }
+    .contact .content
+        {
+        text-align: center;
+        max-width: 900px;
+        }
+    
+    .contact .content p{
+        font-size: 36px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .bucket{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .bucket .info{
+        width:50%;
+        display:flex;
+        flex-direction: column; 
+    }
+    .bucket .info .bx{
+        position: relative;
+        padding: 10px;
+        display: flex;
+    }
+    .bucket .info .bx .icn{
+        min-width: 50px;
+        height: 50px;
+        background: rgb(245, 241, 239);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 20px;
+    
+    }
+    .bucket .info .bx .text{
+        display: flex;
+        margin-left: 15px;
+        font-size: 15px;
+        flex-direction: column;
+        font-weight: 400;
+    }
+    .bucket .info .bx .text {
+        font-weight: 600;
+        }
+    
+    .form{
+        width: 60%;
+        padding: 50px;
+        background-color: white;
+    
+    }
+    
+    .form h2{
+        font-size: 25px;
+        color: rgb(255, 30, 154, 0.8);
+        font-weight: 500;
+        }
+    
+    .form .inputbox{
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .form .inputbox input{
+        width: 100%;
+        padding: 5px 0;
+        font-size: 15px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid rgb(255, 30, 154, 0.8);;
+        outline: none;   
+    }
+    .form .inputbox textarea{
+        width: 100%;
+        padding: 5px 0;
+        font-size: 15px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid rgb(255, 30, 154, 0.8);;
+        outline: none;
+        resize: none;   
+    }
+    
+    .form .inputbox span{
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 17px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: 0.5s;
+        color: black;
+        }
+        
+    .form .inputbox input:focus ~ span, 
+    .form .inputbox input:valid ~ span, 
+    .form .inputbox textarea:focus ~ span, 
+    .form .inputbox textarea:valid ~ span{
+        color: dodgerblue;
+        font-size: 15px;
+        transform: translateY(-20px);
+    }
+    .form .inputbox input[type="submit"]{
+        width: 100px;
+        background: rgb(255, 30, 154, 0.8);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .form .inputbox input[type="submit"]:hover{
+        background:dodgerblue ;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        border-bottom: none;
+
+    }
+    
+    @media (max-width:990px)
+    {
+        .contact
+        {
+            padding: 50px;
+        }
+        .bucket
+        {
+            flex-direction: column;
+        }
+        .bucket .info
+        {
+            margin-bottom: 30px;
+        }
+           
+        .bucket .info, .form
+        {
+            width: 100%;
+        }
+    
     }
